@@ -1,7 +1,9 @@
-<app-common-navbar [isUserLogin]="isUserLogin"></app-common-navbar>
-<div class="container-fluid">
-  <router-outlet></router-outlet>
-</div>
+<body>
+  <app-common-navbar [isUserLogin]="isUserLogin"></app-common-navbar>
+  <div class="container-fluid" style="margin-top: 75px">
+    <router-outlet></router-outlet>
+  </div>
+</body>
 <footer
   id="sticky-footer"
   class="flex-shrink-0 py-2 text-white mt-4"

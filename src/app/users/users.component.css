@@ -4,7 +4,7 @@
         padding: 20px;
         color: #005d2d;
         border: 0px;
-        box-shadow: -6px -5px 8px #005d2d6f;
+        box-shadow: -6px -5px 8px #0000006f;
         margin-top: 80px;
 }
 
@@ -32,12 +32,12 @@
 color: #fff;
 border-radius: 50px; */
 
-background-image: linear-gradient(to right, #bed8ff25, #b7b7b731);
+background-image: linear-gradient(to left, #bed8ff0e, #b7b7b70f);
 }
 .bgLogin {
         /* background-color: #0000009e;
 color: #fff;
 border-radius: 50px; */
 
-background-image: linear-gradient(to right, #b7b7b712, #caffdd39);
+background-image: linear-gradient(to right, #b7b7b712, #ffffff15);
 }

@@ -1,21 +1,31 @@
 <nav class="navbar navbar-expand-lg bg-light fixed-top bottom-border">
+
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img class="logo-size" src="/assets/image/logo.png" alt="Logo" />
       <h4 id="logo-text">Shopiece</h4>
     </a>
+
+
     <div *ngIf="isUserLogin; then ifBlock; else elseBlock"></div>
+
     <ng-template #ifBlock>
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto" *ngFor="let menu of navMenu">
-          <li class="nav-item">
-            <a class="nav-link" [routerLink]="menu?.URL">{{
+          <li class="nav-item" 
+          >
+          <a class="nav-link" [routerLink]="[menu?.URL]"
+          style="font-size: x-small;
+          border: 1px solid rgba(128, 128, 128, 0.285);"
+            
+            >{{
               menu?.MenuName
             }}</a>
           </li>
         </ul>
       </div>
     </ng-template>
+
     <ng-template #elseBlock>
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto">
@@ -37,8 +47,14 @@
         </ul>
       </div>
     </ng-template>
-    <span class="navbar-text">
+
+    <span class="navbar-text" *ngIf="!isUserLogin ">
       <app-app-common-button [buttonConfig]="buttonConfig"></app-app-common-button>
+    </span>
+    <span class="navbar-text" *ngIf="isUserLogin ">
+      <button class="btn hover-filled-slid-up" (click)="onLogout()">
+        <span>  Logout </span>
+      </button>
     </span>
   </div>
 </nav>

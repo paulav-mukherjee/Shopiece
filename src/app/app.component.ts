@@ -26,7 +26,9 @@ export class AppComponent implements DoCheck, OnInit {
 		let userMenu = localStorage.getItem('menu')
 		userToken ? this.isUserLogin = true : this.isUserLogin = false;
 		if(userMenu)
-		this.navMenu = JSON.parse(userMenu)		
+		this.navMenu = JSON.parse(userMenu)	
+		// console.log(this.isUserLogin);
+			
 	}
 	logoutUser(){
 		localStorage.clear()

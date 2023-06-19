@@ -1,84 +1,89 @@
-.carousel-inner{
-    border-radius: 5px !important;
+.carousel-inner {
+  border-radius: 5px !important;
 }
-.myCata{
-    position: absolute;
-    margin-left: 59px;
-    margin-top: 14px;
+
+.myCata {
+  position: absolute;
+  margin-left: 59px;
+  margin-top: 14px;
 }
-li{
+
+li {
   margin-left: 0px !important;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-  }
-  
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  display: flex;
+  margin-right: 80px;
+  text-align: center;
+}
+
+.space-between-types {
+  margin-right: 30px !important;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+@media only screen and (max-width: 600px) {
   .top-bar {
-    display: flex;
-    margin-right: 80px;
-    text-align: center;
-  }
-
-  .space-between-types {
-    margin-right: 30px !important;
-  }
-  
-  .logo {
-    height: 60px ;
-    width: 60px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    margin-left: 10px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .top-bar {
-      flex-direction: row-reverse;
-      font-size: small;
-      padding: 0px;
-      height: 80px;
-    }
-  
-    .logo {
-      margin-bottom: 10px;
-    }
-  
-    nav ul li {
-      display: block;
-      margin: 5px 0;
-    }
-
-    .car-header{
-        margin-top: 25px;
-        margin-left: 80px;
-    }
-  }
-  
-  .cata-style{
+    flex-direction: row-reverse;
+    font-size: small;
+    padding: 0px;
     height: 80px;
-    margin-top: 50px;
-    margin-bottom: -13px;
   }
-  .car-header{
-    margin-top: 41px;
-    margin-left: 200px;
+
+  .logo {
+    margin-bottom: 10px;
   }
-  #jump-page:hover{
-cursor: pointer;
-color: blueviolet;
+
+  nav ul li {
+    display: block;
+    margin: 5px 0;
   }
+
+  .car-header {
+    margin-top: 25px;
+    margin-left: 80px;
+  }
+}
+
+.cata-style {
+  height: 80px;
+  margin-top: 108px !important;
+  margin-left: 70px;
+  margin-bottom: -13px;
+}
+
+.car-header {
+  margin-top: 41px;
+  margin-left: 200px;
+}
+
+#jump-page:hover {
+  cursor: pointer;
+  color: blueviolet;
+}
